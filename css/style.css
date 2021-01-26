@@ -1,0 +1,200 @@
+*{
+    padding: 0px;
+    border: 0px;
+    margin: 0px;
+}
+#app{
+    background-color: #42B9D8;
+   background-image: url('../img/city destroyed.png');
+    /*background-position-x: -7em;
+    background-position-y: -7em;
+    background-repeat: no-repeat;
+    background-size: 50%;*/
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+}
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+}
+.content-logo, .content-timmer{
+    width: 48vw;
+    height: 90vh;
+}
+
+.content-logo{
+    border-top-left-radius: 40%;
+
+}
+
+.content-logo img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50% 0% 50% 50%;
+/*    border:#a3a14f solid 5px;*/
+    box-shadow: 0px 0px 100px #343434;
+}
+
+.content-timmer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.config{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#config-btn{
+    padding: .3em;
+    cursor: pointer;
+}
+.logo{
+    padding-top:1em;
+    background-color: transparent;
+    border-radius: 0px 0px 50% 50%;
+    transform: translateX(50%);
+}
+.logo img{
+    z-index: 2;
+    width: 23em;
+
+}
+
+.clock{
+    font-size: 1.5em;
+    padding: .4em;
+    background-color: aliceblue;
+    width: 38vw;
+    border-radius: 0px 30px 30px 0px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 1em;
+    transform: translateX(-4%);
+    
+}
+
+.rp-audio {
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    font-family: "Comic Sans";
+    color: white;
+    background: #323232;
+}
+button{
+    font-size: 2em;
+}
+
+
+#modal::backdrop{
+    background: #232323; /*linear-gradient(90deg, rgb(20%, 40%, 60%), rgb(60%, 20%, 40%));]*/
+    opacity: .6;
+
+}
+
+dialog{
+    transition: all 1s;
+}
+
+dialog[open] {
+    position: fixed;
+    width: 60%;
+    height: 80vh;
+    top: 4vh;
+    left: 20vw;
+
+    padding: 2em;
+
+}
+
+.dialog-header{
+    font-family: "Comic Sans";
+    display:flex;
+    justify-content: space-between;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    border-bottom: #929292 solid 2px;
+}
+.dialog-header > button{
+    font-size: 1.3em;
+    padding: .3em;
+    background-color:transparent;
+    border-radius: 50%;
+    transition: all 1s;
+    cursor: pointer;
+    transform: translate(100%,-70%);
+    width: 1.3em;
+    height: 1.3em;
+    opacity: .6;
+}
+.dialog-header > button:hover{
+    opacity: 1;
+}
+.dialog-header h2{
+    color: #545445;
+}
+
+.dialog-content{
+    width: 40%;
+    height: 60vh;
+}
+
+.dialog-footer{
+    border-top:#939393 solid 3px;
+}
+.text{
+    font-size: 1.3em;
+    margin-bottom: .5em;
+    margin-top: .5em;
+}
+
+#fechahora{
+    font-size: 1.6em;
+    border:solid #54f1a4 1px;
+    border-radius: 10px;
+    color: #434343;
+    width: 100%;
+}
+input:focus{
+
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+button:focus{
+
+    outline:none !important;
+    outline-width: 0 !important;
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
+.btn{
+    padding: 3px;
+    width: 100%;
+    font-size: 1.2em;
+    border-radius: 15px;
+}
+.btn-primary{
+    margin-top: 1em;
+    background: rgba(13,123,12,.6);
+    color:white;
+    cursor: pointer;
+}
+.input-data{
+    font-size: 1em;
+    border:solid #54f1a4 1px;
+    border-radius: 10px;
+    color: #434343;
+    width: 100%;
+    height: 2em;  
+}
